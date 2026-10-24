@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monami Coffee | Đặt hàng mẫu</title>
+</head>
+<body bgcolor="#FFF8F0">
+
+    <table bgcolor="#4A3B32" border="0" cellpadding="15" cellspacing="0" width="100%">
+        <tr>
+            <td align="center">
+                <font color="#FFFFFF" size="6"><b>☕ FORM ĐẶT HÀNG MẪU - MONAMI COFFEE</b></font>
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#E6CCB2" border="0" cellpadding="12" cellspacing="0" width="100%">
+        <tr>
+            <td align="center">
+                <nav aria-label="Điều hướng đặt hàng">
+                    <a href="index.html">Trang chủ</a> | 
+                    <a href="index.html#san-pham">Sản phẩm</a> | 
+                    <a href="chi-tiet.html">Chi tiết</a> | 
+                    <a href="bang-gia.html">Bảng tổng hợp</a> | 
+                    <a href="dat-hang.html"><b>Đặt hàng mẫu</b></a>
+                </nav>
+            </td>
+        </tr>
+    </table>
+
+    <br/>
+    <div style="max-width: 600px; margin: auto; background: #FFFFFF; padding: 20px; border-radius: 8px;">
+        <form action="xac-nhan.html" method="get">
+            <fieldset>
+                <legend><strong>Thông tin khách hàng</strong></legend>
+                <p>
+                    <label for="ten">Họ và tên *</label><br>
+                    <input autocomplete="name" id="ten" maxlength="60" minlength="2" name="hoTen" placeholder="Nguyễn Văn A" required type="text" style="width: 100%; padding: 8px;"/>
+                </p>
+                <p>
+                    <label for="email">Email liên hệ *</label><br>
+                    <input autocomplete="email" id="email" name="email" placeholder="example@domain.com" required type="email" style="width: 100%; padding: 8px;"/>
+                </p>
+                <p>
+                    <label for="phone">Số điện thoại</label><br>
+                    <input id="phone" name="phone" placeholder="0901234567" type="tel" style="width: 100%; padding: 8px;"/>
+                </p>
+            </fieldset>
+            
+            <fieldset style="margin-top: 15px;">
+                <legend><strong>Thông tin sản phẩm đặt mẫu</strong></legend>
+                <p>
+                    <label for="product">Chọn món nước *</label><br>
+                    <select id="product" name="maSanPham" required style="width: 100%; padding: 8px;">
+                        <option value="">-- Chọn sản phẩm Monami Coffee --</option>
+                        <option value="MC01">MC01 - Cà phê Đen Đá Sài Gòn (20.000 đ)</option>
+                        <option value="MC02">MC02 - Cà phê Sữa Đá Monami (25.000 đ)</option>
+                        <option value="MC03">MC03 - Bạc Xỉu Đặc Biệt (29.000 đ)</option>
+                        <option value="MC04">MC04 - Cold Brew Cam Vàng (45.000 đ)</option>
+                        <option value="MC05">MC05 - Espresso Hạt Rang Mộc (35.000 đ)</option>
+                        <option value="MC06">MC06 - Cappuccino Ý (42.000 đ)</option>
+                        <option value="MC07">MC07 - Latte Macchiato (42.000 đ)</option>
+                        <option value="MC08">MC08 - Trà Đào Cam Sả (38.000 đ)</option>
+                        <option value="MC09">MC09 - Trà Sữa Trân Châu Monami (38.000 đ)</option>
+                        <option value="MC10">MC10 - Sinh Tố Bơ Đắk Lắk (42.000 đ)</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="quantity">Số lượng (1 - 5)</label><br>
+                    <input id="quantity" max="5" min="1" name="soLuong" required step="1" type="number" value="1" style="width: 100%; padding: 8px;"/>
+                </p>
+                <fieldset style="border: 1px dashed #ccc; padding: 10px;">
+                    <legend>Hình thức nhận hàng</legend>
+                    <label><input name="giaoHang" required type="radio" value="tai-cua-hang"/> Nhận trực tiếp tại quán</label><br>
+                    <label><input name="giaoHang" type="radio" value="giao-tan-noi"/> Giao tận nơi</label>
+                </fieldset>
+            </fieldset>
+
+            <p style="margin-top: 15px;">
+                <label><input name="dongy" required type="checkbox" value="yes"/> Tôi hiểu đây chỉ là form thực hành HTML, không tạo đơn hàng thực tế *</label>
+            </p>
+
+            <p align="center" style="margin-top: 20px;">
+                <button type="submit" style="padding: 10px 20px; background: #4A3B32; color: white; border: none; cursor: pointer;">Gửi yêu cầu mẫu</button>
+                <button type="reset" style="padding: 10px 20px; background: #ccc; border: none; cursor: pointer; margin-left: 10px;">Nhập lại</button>
+            </p>
+        </form>
+    </div>
+    <br/>
+
+    <table bgcolor="#4A3B32" border="0" cellpadding="16" cellspacing="0" width="100%">
+        <tr>
+            <td align="center">
+                <font color="white"><b>◆ MONAMI COFFEE</b> - Form đặt hàng © 2026</font><br/>
+                <a href="index.html"><font color="white">Quay lại Trang chủ</font></a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
